@@ -1,0 +1,86 @@
+<html>
+<head>
+	<!--  Made by northword  -->
+	<!--  www.northword.cn   -->
+	<title>四六级生成器</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<script src="function.js"></script>
+</head>
+
+<body><center>
+	<!-- 图片部分 -->
+	<br><h1>生成假CET成绩单</h1>
+	<div class="div-img" id="div-img">
+		<img src="#" name="vimg" id="vimg" class="vimg"/>
+		<b><p>长按图片以保存</p></b>
+		<input type="button" onClick="hiddenimg();" value="返回重填" class="button" /><br>
+	</div>
+	<!-- 表单部分 -->
+    <form id="div-from">
+        <table  border="0"> 
+            <tr>
+                <td class="td1">等级：</td>
+                <td>
+					<input type="radio" name="grade" id="grade4" value="4" checked><label for="grade4">四级</label>&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="grade" id="grade6" value="6"><label for="grade6">六级</label>
+                </td>
+            </tr>
+			
+           <tr>
+                <td class="td1">年份：</td>
+                <td><input type="text" placeholder="年份" id="year" value="2018"></td>
+            </tr>
+			
+           <tr>
+                <td class="td1">场次：</td>
+				<td>
+					<input type="radio" name="session" id="session0" value="上"><label for="session0">上半年</label>
+					<input type="radio" name="session" id="session1" value="下"  checked><label for="session1">下半年</label>
+				</td>
+            </tr>
+
+           <tr>
+                <td class="td1">姓名：</td>
+                <td><input type="text" placeholder="姓名" id="name" ></td>
+            </tr>
+
+           <tr>
+                <td class="td1">学校：</td>
+                <td><input type="text" placeholder="学校" id="school"></td>
+            </tr>
+			
+           <tr>
+                <td class="td1">听力：</td>
+                <td><input type="text" placeholder="听力满分248.5" oninput="OnInput (event)" id="score1" ></td>
+            </tr>
+
+           <tr>
+                <td class="td1">阅读：</td>
+                <td><input type="text" placeholder="阅读满分248.5" oninput="OnInput (event)" id="score2" ></td>
+            </tr>
+
+           <tr>
+                <td class="td1">写作和翻译：</td>
+                <td><input type="text" placeholder="写作106.5，翻译106.5" oninput="OnInput (event)" id="score3" ></td>
+            </tr>
+			
+           <tr>
+                <td class="td1">当前总分：</td>
+                <td><a id="total"></a></td>
+            </tr>
+           <tr>
+				<td colspan="2" align="center"><input type="button" onClick="showimg();" value="确定" class="button" /><br></td>
+           </tr>
+
+         </table>
+     </form>
+	
+	<!-- footer -->
+	<div class="footer">
+		<a href="../" class="copyright">@Northword</a>
+	</div>
+</center></body>
+</html>
+
+
